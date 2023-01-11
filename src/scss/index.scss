@@ -1,5 +1,29 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import '../sass/_variables.scss';
-body{
-  background-color: lightblue;
-}
+
+
+// Scss utilities
+@import "helpers/variables";
+
+// Default theme variables
+@import "helpers/mixins";
+
+// Scss utilities
+@import "helpers/variables-bootstrap";
+
+
+// Base styles
+@import "base/typography";
+@import "base/main";
+
+// Components
+@import "components/select"; // styled default select
+@import "components/form"; // form elements
+
+// Scss utilities
+@import "helpers/helpers"; // helper classes (the old version of the theme file (moved from the public/css folder)
+
+// Blocks (styles for independent blocks)
+@import "blocks/header";
+@import "blocks/footer";
+
+
